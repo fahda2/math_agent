@@ -6,11 +6,7 @@ A ReAct agent that solves questions using tool calls.
 
 1. Install [uv](https://docs.astral.sh/uv/getting-started/installation/) if you don't have it.
 
-2. Copy `.env.example` to `.env` and add your API key:
-   ```bash
-   cp .env.example .env
-   ```
-   Then edit `.env` and replace `your-key-here` with your key from [Google AI Studio](https://aistudio.google.com/apikey).
+2. Create file `.env` and add your API key like for example ANTHROPIC_API_KEY='replace your key here' replace `your-key-here` with your key from [Google AI Studio](https://aistudio.google.com/apikey) or Anthropic which is what I used.
 
    To use a different provider, change the `MODEL` variable in `agent.py` and set the matching key in `.env`.
 
@@ -25,6 +21,10 @@ uv run agent.py
 uv will install dependencies automatically on first run.
 
 The agent will work through each question in `math_questions.md` and print the ReAct trace (Reason / Act / Result) for each one.
+
+## Walkthrough Video
+
+[Watch the demo on YouTube](https://youtu.be/your-video-id-here)
 
 ## Files
 
